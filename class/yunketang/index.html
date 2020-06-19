@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>天亮云课堂</title>
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <img src="images/title.png" alt="">
+            <div class="h-search">
+                <form class="bs-example bs-example-form" role="form">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="btn" value="" />
+                        <span class="input-group-addon"> <button>
+                                <img src="images/搜索.png" style="width: 18px;height: 18px;">
+                                <a href="搜索.html">搜索</a>
+                            </button></span>
+                    </div>
+                </form>
+            </div>
+            <div class="login-container">
+                <div class="login-box">
+                    <a href="" class="shopping">
+                        <img src="images/购物车.png" alt="">
+                        <div class="ant-divider"></div>
+                        <div class="user-avatar">
+                            <span style="margin-right: 8px;">
+                                登录/注册
+                            </span>
+                            <span class="yonghu">
+                                <img src="images/用户.png" style="width: 22px;height: 22px;">
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 导航 -->
+    <nav>
+        <ul class="nav">
+            <li class="select"><a href="#">首页</a></li>
+            <li class="courses">
+                <a href="#">课程分类
+                    <img src="images/下.png" style="width: 20px;height: 20px;">
+                </a>
+                <ul id="box1">
+                </ul>
+            </li>
+            <li><a href="#">专属课堂</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <!-- 轮播图 -->
+        <div id="myCarousel" class="carousel slide lunbo">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item item1 active itemSize">
+                    <!-- <img src="" alt="First slide"> -->
+                </div>
+                <div class="item item2 itemSize">
+                    <!-- <img src="" alt="Second slide"> -->
+                </div>
+                <div class="item item3 itemSize">
+                    <!-- <img src="" alt="Third slide"> -->
+                </div>
+                <div class="item item4 itemSize">
+                    <!-- <img src="" alt="Second slide"> -->
+                </div>
+                <div class="item item5 itemSize">
+                    <!-- <img src="" alt="Third slide"> -->
+                </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- 直播课程 -->
+        <section class="liveCourse">
+            <div class="box course-live-online-container">
+                <h1>直播课程</h1>
+                <div class="ant-row">
+                    <div class="lesson-left">
+                        <div class="bigBox">
+                            <div class="inner" style="position: relative;">
+                                <img src="images/lesson2.png" />
+                                <div class="out">
+                                    <div class="title">研究生复试之高效准备简历的方法</div>
+                                    <div style="margin-left: 200px; margin-top: 50px;">
+                                        <img src="images/对 (1).png" style="width: 20px; height: 20px;">
+                                        <span>直播结束</span>
+                                    </div>
+                                    <div class="letf-appply">直播结束</div>
+                                </div>
+                            </div>
+                            <div class="inner" style="position: relative;">
+                                <img src="images/lesson4.jpg" />
+                                <div class="out">
+                                    <div class="title">十大经典排序之Part-6-完结篇</div>
+                                    <div style="margin-left: 200px; margin-top: 50px;">
+                                        <img src="images/对 (1).png" style="width: 20px; height: 20px;">
+                                        <span>直播结束</span>
+                                    </div>
+                                    <div class="letf-appply">直播结束</div>
+                                </div>
+                            </div>
+                            <div class="inner" style="position: relative;">
+                                <img src="images/lesson3.png" />
+                                <div class="out">
+                                    <div class="title">jdk1.8-新特性之函数式接口与方法引用</div>
+                                    <div style="margin-left: 200px; margin-top: 50px;">
+                                        <img src="images/对 (1).png" style="width: 20px; height: 20px;">
+                                        <span>直播结束</span>
+                                    </div>
+                                    <div class="letf-appply">直播结束</div>
+                                </div>
+                            </div>
+                            <div class="inner" style="position: relative;">
+                                <img src="images/lesson1.png" />
+                                <div class="out">
+                                    <div class="title">高考之殇与痛则思变</div>
+                                    <div style="margin-left: 200px; margin-top: 50px;">
+                                        <img src="images/播放 (1).png" style="width: 20px; height: 20px;">
+                                        <span>尚未开播</span>
+                                    </div>
+                                    <div class="letf-appply">直播结束</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lesson-right">
+                        <ul>
+                            <li class="select1">
+                                <img src="images/对.png" style="width: 20px;height: 20px;">
+                                <span style="margin-left: 20px;">直播结束</span>
+                                <span style="margin-left: 50px; font-size: 16px;">
+                                    研究生复试之高效准备简历的方法
+                                </span>
+                            </li>
+                            <li>
+                                <img src="images/对.png" style="width: 20px;height: 20px;">
+                                <span style="margin-left: 20px;">直播结束</span>
+                                <span style="margin-left: 50px; font-size: 16px;">
+                                    十大经典排序之Part-6-完结篇
+                                </span>
+                            </li>
+                            <li>
+                                <img src="images/对.png" style="width: 20px;height: 20px;">
+                                <span style="margin-left: 20px;">直播结束</span>
+                                <span style="margin-left: 50px; font-size: 16px;">
+                                    jdk1.8-新特性之函数式接口与方法引用
+                                </span>
+                            </li>
+                            <li>
+                                <img src="images/播放.png" style="width: 20px;height: 20px;">
+                                <span style="margin-left: 20px;">直播结束</span>
+                                <span style="margin-left: 50px; font-size: 16px;">
+                                    高考之殇与痛则思变
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 免费课程 -->
+        <section class="freeCourse">
+            <div class="phone-class-list">
+                <div class="ant-row" style="margin-left: -8px; margin-right: -8px;">
+                    <header>
+                        <span class="title-course">免费课程</span>
+                        <span class="more-course">
+                            <a href="#">更多<img src="images/右.png" style="width: 20px;height: 20px;"></a>
+                        </span>
+                    </header>
+                </div>
+                <!-- <h1>免费课程</h1> -->
+            </div>
+            <ul class="free-box">
+                <li class="courseId">
+                    <a href="详情.html">
+                        <div class="free-box-img"><img class="bannerFileUrlPc" /></div>
+                        <p class="free-box-p courseTitle"></p>
+                        <p style="color: #888; cursor: pointer; font-size: 14px;">
+                            共<span class="subSectionNum"></span>节课|<span class="learningNum"></span>人报名
+                        </p>
+                        <p class="free">
+                            免费
+                        </p>
+                    </a>
+                </li>
+                <li class="courseId">
+                    <a href="详情.html">
+                        <div class="free-box-img"><img class="bannerFileUrlPc" /></div>
+                        <p class="free-box-p courseTitle"></p>
+                        <p style="color: #888; cursor: pointer; font-size: 14px;">
+                            共<span class="subSectionNum"></span>节课|<span class="learningNum"></span>人报名
+                        </p>
+                        <p class="free">
+                            免费
+                        </p>
+                    </a>
+                </li>
+                <li class="courseId">
+                    <a href="详情.html">
+                        <div class="free-box-img"><img class="bannerFileUrlPc" /></div>
+                        <p class="free-box-p courseTitle"></p>
+                        <p style="color: #888; cursor: pointer; font-size: 14px;">
+                            共<span class="subSectionNum"></span>节课|<span class="learningNum"></span>人报名
+                        </p>
+                        <p class="free">
+                            免费
+                        </p>
+                    </a>
+                </li>
+                <li class="courseId">
+                    <a href="详情.html">
+                        <div class="free-box-img"><img class="bannerFileUrlPc" /></div>
+                        <p class="free-box-p courseTitle"></p>
+                        <p style="color: #888; cursor: pointer; font-size: 14px;">
+                            共<span class="subSectionNum"></span>节课|<span class="learningNum"></span>人报名
+                        </p>
+                        <p class="free">
+                            免费
+                        </p>
+                    </a>
+                </li>
+                <li class="courseId">
+                    <a href="详情.html">
+                        <div class="free-box-img"><img class="bannerFileUrlPc" /></div>
+                        <p class="free-box-p courseTitle"></p>
+                        <p style="color: #888; cursor: pointer; font-size: 14px;">
+                            共<span class="subSectionNum"></span>节课|<span class="learningNum"></span>人报名
+                        </p>
+                        <p class="free">
+                            免费
+                        </p>
+                    </a>
+                </li>
+            </ul>
+            <ul class="free-box">
+                <li class="courseId">
+                    <a href="详情.html">
+                        <div class="free-box-img"><img class="bannerFileUrlPc" /></div>
+                        <p class="free-box-p courseTitle"></p>
+                        <p style="color: #888; cursor: pointer; font-size: 14px;">
+                            共<span class="subSectionNum"></span>节课|<span class="learningNum"></span>人报名
+                        </p>
+                        <p class="free">
+                            免费
+                        </p>
+                    </a>
+                </li>
+                <li class="courseId">
+                    <a href="详情.html">
+                        <div class="free-box-img"><img class="bannerFileUrlPc" /></div>
+                        <p class="free-box-p courseTitle"></p>
+                        <p style="color: #888; cursor: pointer; font-size: 14px;">
+                            共<span class="subSectionNum"></span>节课|<span class="learningNum"></span>人报名
+                        </p>
+                        <p class="free">
+                            免费
+                        </p>
+                    </a>
+                </li>
+                <li class="courseId">
+                    <a href="详情.html">
+                        <div class="free-box-img"><img class="bannerFileUrlPc" /></div>
+                        <p class="free-box-p courseTitle"></p>
+                        <p style="color: #888; cursor: pointer; font-size: 14px;">
+                            共<span class="subSectionNum"></span>节课|<span class="learningNum"></span>人报名
+                        </p>
+                        <p class="free">
+                            免费
+                        </p>
+                    </a>
+                </li>
+                <li class="courseId">
+                    <a href="详情.html">
+                        <div class="free-box-img"><img class="bannerFileUrlPc" /></div>
+                        <p class="free-box-p courseTitle"></p>
+                        <p style="color: #888; cursor: pointer; font-size: 14px;">
+                            共<span class="subSectionNum"></span>节课|<span class="learningNum"></span>人报名
+                        </p>
+                        <p class="free">
+                            免费
+                        </p>
+                    </a>
+                </li>
+                <li class="courseId">
+                    <a href="详情.html">
+                        <div class="free-box-img"><img class="bannerFileUrlPc" /></div>
+                        <p class="free-box-p courseTitle"></p>
+                        <p style="color: #888; cursor: pointer; font-size: 14px;">
+                            共<span class="subSectionNum"></span>节课|<span class="learningNum"></span>人报名
+                        </p>
+                        <p class="free">
+                            免费
+                        </p>
+                    </a>
+                </li>
+
+            </ul>
+        </section>
+        <!-- 精品课程 -->
+        <section class="excellentCourses">
+            <div class="phone-class-list">
+                <div class="ant-row" style="margin-left: -8px; margin-right: -8px;">
+                    <header>
+                        <span class="title-course">免费课程</span>
+                        <span class="more-course">
+                            <a href="#">更多<img src="images/右.png" style="width: 20px;height: 20px;"></a>
+                        </span>
+                    </header>
+                </div>
+                <!-- <h1>免费课程</h1> -->
+            </div>
+            <ul class="free-box">
+                <li class="courseId">
+                    <a href="#">
+                        <div class="free-box-img"><img class="bannerFileUrlPc" /></div>
+                        <p class="free-box-p courseTitle"><a> </a></p>
+                        <p style="color: #888; cursor: pointer; font-size: 14px;">
+                            共<span class="subSectionNum"></span>节课|<span class="learningNum"></span>人报名
+                        </p>
+                        <p style=" width: 100px; float: left;">
+                            <span style="color: #ff4500;">￥99.9</span><span style="
+                              color: #999;
+                              text-decoration: line-through;
+                              font-size: 12px;
+                            ">￥800</span>
+                            <div class="ant-tag-orange discountDesc">限时钜惠</div>
+                        </p>
+                    </a>
+                </li>
+                <li class="courseId">
+                    <a href="#">
+                        <div class="free-box-img"><img class="bannerFileUrlPc" /></div>
+                        <p class="free-box-p courseTitle"><a> </a></p>
+                        <p style="color: #888; cursor: pointer; font-size: 14px;">
+                            共<span class="subSectionNum"></span>节课|<span class="learningNum"></span>人报名
+                        </p>
+                        <p style=" width: 100px; float: left;">
+                            <span style="color: #ff4500;">￥99.9</span><span style="
+                              color: #999;
+                              text-decoration: line-through;
+                              font-size: 12px;
+                            ">￥800</span>
+                            <div class="ant-tag-orange discountDesc">限时钜惠</div>
+                        </p>
+                    </a>
+                </li>
+                <li class="courseId">
+                    <a href="#">
+                        <div class="free-box-img"><img class="bannerFileUrlPc" /></div>
+                        <p class="free-box-p courseTitle"><a> </a></p>
+                        <p style="color: #888; cursor: pointer; font-size: 14px;">
+                            共<span class="subSectionNum"></span>节课|<span class="learningNum"></span>人报名
+                        </p>
+                        <p style=" width: 100px; float: left;">
+                            <span style="color: #ff4500;">￥99.9</span><span style="
+                              color: #999;
+                              text-decoration: line-through;
+                              font-size: 12px;
+                            ">￥800</span>
+                            <div class="ant-tag-orange discountDesc">限时钜惠</div>
+                        </p>
+                    </a>
+                </li>
+                <li class="courseId">
+                    <a href="#">
+                        <div class="free-box-img"><img class="bannerFileUrlPc" /></div>
+                        <p class="free-box-p courseTitle"><a> </a></p>
+                        <p style="color: #888; cursor: pointer; font-size: 14px;">
+                            共<span class="subSectionNum"></span>节课|<span class="learningNum"></span>人报名
+                        </p>
+                        <p style=" width: 100px; float: left;">
+                            <span style="color: #ff4500;">￥99.9</span><span style="
+                              color: #999;
+                              text-decoration: line-through;
+                              font-size: 12px;
+                            ">￥800</span>
+                            <div class="ant-tag-orange discountDesc">限时钜惠</div>
+                        </p>
+                    </a>
+                </li>
+                <li class="courseId">
+                    <a href="详情.html">
+                        <div class="free-box-img"><img class="bannerFileUrlPc" /></div>
+                        <p class="free-box-p courseTitle"></p>
+                        <p style="color: #888; cursor: pointer; font-size: 14px;">
+                            共<span class="subSectionNum"></span>节课|<span class="learningNum"></span>人报名
+                        </p>
+                        <p style="color: #1da57a; font-size: 18px; margin-top: -5px;">
+                            免费
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- 限时折扣课程 -->
+        <section class="saleCourse">
+            <div class="phone-class-list">
+                <div class="ant-row" style="margin-left: -8px; margin-right: -8px;">
+                    <header>
+                        <span class="title-course">限时折扣课程</span>
+                        <span class="more-course">
+                            <a href="#">更多<img src="images/右.png" style="width: 20px;height: 20px;"></a>
+                        </span>
+                    </header>
+                </div>
+                <!-- <h1>免费课程</h1> -->
+            </div>
+            <ul class="free-box">
+                <li class="courseId">
+                    <a href="#">
+                        <div class="free-box-img"><img class="bannerFileUrlPc" /></div>
+                        <p class="free-box-p courseTitle"><a>  </a></p>
+                        <p style="color: #888; cursor: pointer; font-size: 14px;">
+                            共<span class="subSectionNum"></span>节课|<span class="learningNum"></span>人报名
+                        </p>
+                        <p style=" width: 100px; float: left;">
+                            <span style="color: #ff4500;">￥99.9</span><span style="
+                              color: #999;
+                              text-decoration: line-through;
+                              font-size: 12px;
+                            ">￥800</span>
+                            <div class="ant-tag-orange discountDesc">限时钜惠</div>
+                        </p>
+                    </a>
+                </li>
+                <li class="courseId">
+                    <a href="#">
+                        <div class="free-box-img"><img class="bannerFileUrlPc" /></div>
+                        <p class="free-box-p courseTitle"><a>  </a></p>
+                        <p style="color: #888; cursor: pointer; font-size: 14px;">
+                            共<span class="subSectionNum"></span>节课|<span class="learningNum"></span>人报名
+                        </p>
+                        <p style=" width: 100px; float: left;">
+                            <span style="color: #ff4500;">￥99.9</span><span style="
+                              color: #999;
+                              text-decoration: line-through;
+                              font-size: 12px;
+                            ">￥800</span>
+                            <div class="ant-tag-orange discountDesc">限时钜惠</div>
+                        </p>
+                    </a>
+                </li>
+                <li class="courseId">
+                    <a href="#">
+                        <div class="free-box-img"><img class="bannerFileUrlPc" /></div>
+                        <p class="free-box-p courseTitle"><a>  </a></p>
+                        <p style="color: #888; cursor: pointer; font-size: 14px;">
+                            共<span class="subSectionNum"></span>节课|<span class="learningNum"></span>人报名
+                        </p>
+                        <p style=" width: 100px; float: left;">
+                            <span style="color: #ff4500;">￥99.9</span><span style="
+                              color: #999;
+                              text-decoration: line-through;
+                              font-size: 12px;
+                            ">￥800</span>
+                            <div class="ant-tag-orange discountDesc">限时钜惠</div>
+                        </p>
+                    </a>
+                </li>
+                <li class="courseId">
+                    <a href="#">
+                        <div class="free-box-img"><img class="bannerFileUrlPc" /></div>
+                        <p class="free-box-p courseTitle"><a>  </a></p>
+                        <p style="color: #888; cursor: pointer; font-size: 14px;">
+                            共<span class="subSectionNum"></span>节课|<span class="learningNum"></span>人报名
+                        </p>
+                        <p style=" width: 100px; float: left;">
+                            <span style="color: #ff4500;">￥99.9</span><span style="
+                              color: #999;
+                              text-decoration: line-through;
+                              font-size: 12px;
+                            ">￥800</span>
+                            <div class="ant-tag-orange discountDesc">限时钜惠</div>
+                        </p>
+                    </a>
+                </li>
+                <li class="courseId">
+                    <a href="#">
+                        <div class="free-box-img"><img class="bannerFileUrlPc" /></div>
+                        <p class="free-box-p courseTitle"><a>  </a></p>
+                        <p style="color: #888; cursor: pointer; font-size: 14px;">
+                            共<span class="subSectionNum"></span>节课|<span class="learningNum"></span>人报名
+                        </p>
+                        <p style=" width: 100px; float: left;">
+                            <span style="color: #ff4500;">￥99.9</span><span style="
+                              color: #999;
+                              text-decoration: line-through;
+                              font-size: 12px;
+                            ">￥800</span>
+                            <div class="ant-tag-orange discountDesc">限时钜惠</div>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- 头条精选 -->
+        <section class="headlines">
+            <div class="phone-class-list">
+                <div class="ant-row" style="margin-left: -8px; margin-right: -8px;">
+                    <header>
+                        <span class="title-course">头条精选</span>
+                        <span class="more-course">
+                            <a href="#">更多<img src="images/右.png" style="width: 20px;height: 20px;"></a>
+                        </span>
+                    </header>
+                </div>
+                <!-- <h1>免费课程</h1> -->
+                <ul class="free-box">
+                    <li>
+                        <a h>
+                            <div class="free-box-img"><img src="images/经验分享.jpg" /></div>
+                            <p class="free-box-p free-box-p1"><a> 小米集团-科大16级韩同学成长经历分享 </a></p>
+
+                    </li>
+                    <li>
+                        <a>
+                            <div class="free-box-img"><img src="images/经验分享.jpg" /></div>
+                            <p class="free-box-p free-box-p1"><a> 米联科技-科大16级郭同学成长经历分享 </a></p>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="free-box-img"><img src="images/经验分享.jpg" /></div>
+                            <p class="free-box-p free-box-p1"><a> 小米集团-科大16级韩同学成长经历分享 </a></p>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="free-box-img"><img src="images/经验分享.jpg" /></div>
+                            <p class="free-box-p free-box-p1"><a> 万向思维-科大16级支同学成长经历分享 </a></p>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="free-box-img"><img src="images/经验分享.jpg" /></div>
+                            <p class="free-box-p free-box-p1"><a> 尚云科技-科大15级王同学成长经历分享2 </a></p>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="f-box">
+            <div class="f-title">友情链接:</div>
+            <div class="f-nav">
+                <a id="dictLabel1" target="blank"> </a>
+                <a href="http://shangyuninfo.com/" target="blank" id="dictLabel2"></a>
+                <a href="http://starcloud2.myhope365.com/" target="blank" id="dictLabel3"></a>
+                <a href="http://yuqing.shangyuninfo.com/" target="blank" id="dictLabel4"></a>
+                <a href="http://bs.shangyuninfo.com/home" target="blank" id="dictLabel5"> </a>
+            </div>
+            <hr
+                style="background-color: rgb(84, 84, 84); width: 1000px;margin: auto;  height: 3px; border: none; margin-top: 10px;">
+            <div style="text-align: center; margin-top: 5px;">Copyright © 2017-2025 石家庄天亮教育科技有限公司 备案号:冀ICP备17020003号
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="lib/jQuery/jquery-3.4.1.min.js"></script>
+<script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>
