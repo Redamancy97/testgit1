@@ -1,0 +1,287 @@
+/* 公共部分 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #515a6e;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #2d8cf0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.active {
+    color: #00cf8c !important;
+    border-bottom: 2px solid #00cf8c;
+}
+
+.active1 {
+    color: #0469b3 !important;
+    height: 35px !important;
+    border-bottom: 2px solid #0469b3;
+}
+
+#app {
+    min-width: 1300px;
+    overflow: auto;
+}
+
+/* 导航栏 */
+.nav {
+    width: 100%;
+    height: 60px;
+    min-width: 1300px;
+    z-index: 1001;
+    /* background-color: red; */
+}
+
+.nav-left {
+    height: 46px;
+    width: 359px;
+    line-height: 46px;
+    float: left;
+    margin-top: 8px;
+    margin-left: 50px;
+}
+
+.nav-left img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-right {
+    height: 60px;
+    /* width: 600px; */
+    float: right;
+    margin-right: 50px;
+}
+
+.nav-right ul li {
+    height: 100%;
+    /* width: 15%; */
+    width: 100px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 14px;
+    font-family: SourceHanSansSC-regular;
+    float: left;
+}
+
+.nav-right ul li a {
+    display: block;
+    height: 50px;
+    color: #515a6e;
+    width: 60px;
+}
+
+.nav-right ul li a:hover {
+    color: #00cf8c !important;
+    border-bottom: 2px solid #00cf8c;
+}
+
+.denglu {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    background: #00cf8c;
+    margin-top: 15px;
+    line-height: 30px;
+    color: #fff;
+}
+
+/* 内容 */
+
+#login {
+    /* height: calc(100vh - 60px); */
+    /* min-height: calc(100vh - 60px); */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url(../images/background.jpg) no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+}
+
+.login {
+    z-index: 1001;
+    font-size: 14px;
+    padding: 30px 70px 30px 70px;
+    background-color: #fff;
+    border: 1px solid #99a2a3;
+    width: 390px;
+    margin: auto;
+    position: relative;
+    top: calc(50% - 200px);
+}
+
+.login h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registerTop {
+    display: flex;
+}
+
+.registerTopItem {
+    line-height: 1.5;
+    width: 50%;
+    text-align: center;
+    height: 27px;
+    color: #000;
+    font-size: 18px;
+    font-family: SourceHanSansSC-bold;
+    margin: 15px 0;
+}
+
+.ivu-form-item {
+    width: 250px;
+    height: 32px;
+    margin-bottom: 20px;
+    vertical-align: top;
+    border: 1px solid #dcdee2;
+    border-radius: 4px;
+
+}
+
+.icon {
+    width: 32px;
+    height: 30px;
+    padding: 5px 0;
+    text-align: center;
+    background-color: #f8f8f9;
+    border-right: 1px solid #dcdee2;
+    float: left;
+}
+
+.icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.ivu-form-item input {
+    width: 215px;
+    height: 30px;
+    float: left;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 4px;
+    position: relative;
+    z-index: 2;
+    padding: 4px 7px;
+}
+
+.ivu-form-item button {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border: none;
+    background-color: #2d8cf0;
+    border-color: #2d8cf0;
+    border-radius: 4px;
+}
+
+.pointer1 {
+    color: #000;
+    position: absolute;
+    bottom: 16px;
+}
+
+.pointer2 {
+    color: #000;
+    position: absolute;
+    bottom: 16px;
+    right: 70px;
+}
+
+.yzm {
+    width: 164px;
+}
+
+.btn {
+    width: 100%;
+    height: 32px;
+    color: #fff;
+    border: none;
+    background-color: #2d8cf0;
+    border-color: #2d8cf0;
+    border-radius: 4px;
+}
+
+
+/* 尾部 */
+.foot {
+    padding: 10px;
+    height: 140px;
+    width: 100%;
+    background-color: #00cf8c;
+    text-align: center;
+    margin: 0 auto;
+    /* height: 20px; */
+    color: #fff;
+    font-size: 12px;
+    font-family: SourceHanSansSC-regular;
+    position: relative;
+}
+
+.foot-left {
+    display: inline-block;
+    width: 100%;
+    float: left;
+}
+
+.yqlj {
+    width: 100%;
+    height: 60px;
+    line-height: 50px;
+    font-size: 14px;
+}
+
+.yqlj a {
+    color: #fff;
+}
+
+.bq {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    height: 20px;
+    color: #fff;
+    font-size: 12px;
+    font-family: SourceHanSansSC-regular;
+}
+
+.foot-right {
+    margin-top: -14px;
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    /* float: right; */
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+.foot-right img {
+    display: inline;
+    width: 83px;
+}
+
+.foot-right span {
+    font-size: 14px;
+}

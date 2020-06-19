@@ -1,0 +1,201 @@
+/* 公共部分 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #515a6e;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #2d8cf0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.active {
+    color: #00cf8c !important;
+    border-bottom: 2px solid #00cf8c;
+}
+
+#app {
+    min-width: 1300px;
+    overflow: auto;
+}
+
+
+/* 导航栏 */
+.nav {
+    width: 100%;
+    height: 60px;
+    min-width: 1300px;
+    z-index: 1001;
+    /* background-color: red; */
+}
+
+.nav-left {
+    height: 46px;
+    width: 359px;
+    line-height: 46px;
+    float: left;
+    margin-top: 8px;
+    margin-left: 50px;
+}
+
+.nav-left img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-right {
+    height: 60px;
+    /* width: 600px; */
+    float: right;
+    margin-right: 50px;
+}
+
+.nav-right ul li {
+    height: 100%;
+    /* width: 15%; */
+    width: 100px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 14px;
+    font-family: SourceHanSansSC-regular;
+    float: left;
+}
+
+.nav-right ul li a {
+    display: block;
+    height: 50px;
+    color: #515a6e;
+    width: 60px;
+}
+
+.nav-right ul li a:hover {
+    color: #00cf8c !important;
+    border-bottom: 2px solid #00cf8c;
+}
+
+/* 内容 */
+.NewsDetail {
+    margin: 40px 0;
+}
+
+.box-item {
+    width: 1200px;
+    margin: auto;
+}
+
+.box-item img {
+    margin: 20px 50px;
+}
+
+.detail {
+    width: 1100px;
+    margin: auto;
+}
+
+.detail h1 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.time {
+    width: 90%;
+    margin: 10px auto;
+    height: 36px;
+    line-height: 36px;
+    color: #91878a;
+    text-align: center;
+    font-size: 14px;
+}
+
+.detail p {
+    text-indent: 2em;
+    font-size: 16px;
+    line-height: 30px;
+    width: 90%;
+    margin-top: 20px;
+    margin: auto;
+    margin-bottom: 120px;
+    font-family: SourceHanSansSC-regular;
+}
+
+/* 尾部 */
+.foot {
+    padding: 10px;
+    height: 140px;
+    width: 100%;
+    background-color: #00cf8c;
+    text-align: center;
+    margin: 0 auto;
+    /* height: 20px; */
+    color: #fff;
+    font-size: 12px;
+    font-family: SourceHanSansSC-regular;
+    position: relative;
+}
+
+.foot-left {
+    display: inline-block;
+    width: 100%;
+    float: left;
+}
+
+.yqlj {
+    width: 100%;
+    height: 60px;
+    line-height: 50px;
+    font-size: 14px;
+}
+
+.yqlj a {
+    color: #fff;
+}
+
+.bq {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    height: 20px;
+    color: #fff;
+    font-size: 12px;
+    font-family: SourceHanSansSC-regular;
+}
+
+.foot-right {
+    margin-top: -14px;
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    /* float: right; */
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+.foot-right img {
+    display: inline;
+    width: 83px;
+}
+
+.foot-right span {
+    font-size: 14px;
+}

@@ -1,0 +1,352 @@
+/* 公共部分 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #2d8cf0;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+ul {
+    list-style: none;
+}
+
+.active3 {
+    color: #00cf8c !important;
+    border-bottom: 2px solid #00cf8c;
+}
+
+#app {
+    min-width: 1300px;
+    overflow: auto;
+}
+
+/* 导航栏 */
+.nav {
+    width: 100%;
+    height: 60px;
+    min-width: 1300px;
+    z-index: 1001;
+    /* background-color: red; */
+}
+
+.nav-left {
+    height: 46px;
+    width: 359px;
+    line-height: 46px;
+    float: left;
+    margin-top: 8px;
+    margin-left: 50px;
+}
+
+.nav-left img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-right {
+    height: 60px;
+    /* width: 600px; */
+    float: right;
+    margin-right: 50px;
+}
+
+.nav-right ul li {
+    height: 100%;
+    /* width: 15%; */
+    width: 100px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 14px;
+    font-family: SourceHanSansSC-regular;
+    float: left;
+}
+
+.nav-right ul li a {
+    display: block;
+    height: 50px;
+    color: #515a6e;
+    width: 60px;
+}
+
+.nav-right ul li a:hover {
+    color: #00cf8c !important;
+    border-bottom: 2px solid #00cf8c;
+}
+
+/* 内容 */
+.content {
+    margin-bottom: 30px;
+}
+
+/* 轮播图 */
+.carousel {
+    width: 100%;
+    height: 400px;
+}
+
+.carousel .carousel-inner {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel .carousel-inner .item {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel .carousel-inner .item img {
+    height: 100%;
+    width: 100%;
+}
+
+/* .swiper .carousel .carousel-inner .bg1 {
+    background: url(../images/尚云科技.jpg) center center no-repeat;
+}
+
+.swiper .carousel .carousel-inner .bg2 {
+    background: url(../images/天亮教育.jpg) center;
+}
+
+.swiper .carousel .carousel-inner .bg3 {
+    background: url(../images/new2.jpg) center;
+} */
+
+/* 新闻动态标题 */
+.news-title {
+    width: 90%;
+    margin: auto;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* 新闻动态 */
+.news {
+    width: 90%;
+    margin: auto;
+    padding-left: 50px;
+    height: 234px;
+}
+
+.news-content {
+    width: 100%;
+    position: relative;
+    margin-left: -16px;
+    margin-right: -16px;
+    height: auto;
+    zoom: 1;
+    display: block;
+}
+
+.news-left {
+    width: 16.66%;
+    height: 150px;
+    /* height: 150px; */
+    float: left;
+    padding-left: 16px;
+    padding-right: 16px;
+    /* display: block; */
+}
+
+.news-left-con {
+    padding-left: 2em;
+    border-right: 2px solid #efefef;
+    color: #2a2147;
+    font-size: 16px;
+    text-align: left;
+    font-family: SourceHanSansSC-regular;
+}
+
+.news-left label {
+    line-height: 50px;
+    height: 50px;
+    font-size: 16px;
+    position: relative;
+}
+
+.news-content label input {
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+}
+
+.news-right {
+    width: 83.34%;
+    height: 170px;
+    float: left;
+    padding-left: 16px;
+    padding-right: 16px;
+    overflow: hidden;
+}
+
+.news-right-con dl {
+    margin-top: 20px;
+    height: 170px;
+    border-bottom: 1px solid #ddd;
+}
+
+.news-right-con dl dt {
+    float: left;
+}
+
+.news-right-con dl dt:first-of-type {
+    width: 25%;
+}
+
+.news-right-con dl dt:first-of-type img {
+    width: 100%;
+    height: 150px;
+}
+
+.news-right-con dl dt:last-of-type {
+    width: 75%;
+    padding-left: 20px;
+}
+
+.notice h5 {
+    text-align: left;
+    font-family: SourceHanSansSC-regular;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 10px;
+    font-weight: 400;
+    color: #101010;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.notice p {
+    margin: 30px 0;
+    color: #6f6f6f;
+    font-size: 12px;
+}
+
+.more-time {
+    font-size: 12px;
+    color: #515a6e;
+}
+
+.more-time span:nth-of-type(2) {
+    display: inline-block;
+    float: right;
+}
+
+/* 联系方式 */
+.callQQ {
+    width: 70px;
+    text-align: center;
+    position: fixed;
+    top: 460px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.callQQ dt {
+    height: 70px;
+    padding: 5px;
+    background: #e6f7ff;
+    color: #00cf8c;
+    margin-top: 2px;
+    /* cursor: pointer; */
+    font-size: 14px;
+}
+
+.callQQ dt a {
+    color: #00cf8c;
+}
+
+.callQQ dt a:hover {
+    color: #ffffff;
+}
+
+.callQQ dt img {
+    width: 40px;
+    height: 40px;
+}
+
+.callQqImg {
+    /* width: 312px; */
+    height: 214px;
+    position: fixed;
+    bottom: 21px;
+    right: 90px;
+    z-index: 100;
+    display: none;
+}
+
+.callQqImg>img {
+    width: 156px;
+    height: 214px;
+}
+
+/* 尾部 */
+.foot {
+    padding: 10px;
+    height: 140px;
+    width: 100%;
+    background-color: #00cf8c;
+    text-align: center;
+    margin: 0 auto;
+    /* height: 20px; */
+    color: #fff;
+    font-size: 12px;
+    font-family: SourceHanSansSC-regular;
+    position: relative;
+}
+
+.foot-left {
+    display: inline-block;
+    width: 100%;
+    float: left;
+}
+
+.yqlj {
+    width: 100%;
+    height: 60px;
+    line-height: 50px;
+    font-size: 14px;
+}
+
+.yqlj a {
+    color: #fff;
+}
+
+.bq {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    height: 20px;
+    color: #fff;
+    font-size: 12px;
+    font-family: SourceHanSansSC-regular;
+}
+
+.foot-right {
+    margin-top: -14px;
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    /* float: right; */
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+.foot-right img {
+    display: inline;
+    width: 83px;
+}
+
+.foot-right span {
+    font-size: 14px;
+}

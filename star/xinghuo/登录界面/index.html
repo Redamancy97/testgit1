@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="app">
+        <!-- 导航栏 -->
+        <nav class="nav">
+            <div class="nav-left">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="../新闻动态/index.html">新闻动态</a></li>
+                    <li><a href="../大赛报名/index.html">大赛报名</a></li>
+                    <li><a href="http://bbs.myhope365.com/" target="_blank">天亮社区</a></li>
+                    <li><a href="../关于我们/index.html">关于我们</a></li>
+                    <a href="../登录界面/index.html"><span class="denglu">登录</span></a>
+                </ul>
+            </div>
+        </nav>
+        <!-- 内容 -->
+        <div class="content">
+            <div id="login">
+                <div class="login">
+                    <h2>星火创新创业服务平台</h2>
+                    <div class="registerTop" id="registerTop">
+                        <div class="registerTopItem active1">账号登录</div>
+                        <div class="registerTopItem">手机登录</div>
+                    </div>
+                    <form autocomplete="off">
+                        <div class="sure">
+                            <div class="ivu-form-item">
+                                <div class="icon">
+                                    <img src="images/yonghu.png" alt="">
+                                </div>
+                                <input type="text" autocomplete="off" spellcheck="false" placeholder="请输入用户名" id="username">
+                            </div>
+                            <div class="ivu-form-item">
+                                <div class="icon">
+                                    <img src="images/密码.png" alt="">
+                                </div>
+                                <input type="password" autocomplete="off" spellcheck="false" placeholder="请输入密码" id="password">
+                            </div>
+                        </div>
+                        <div class="sure" style="display: none;">
+                            <div class="ivu-form-item">
+                                <div class="icon">
+                                    <img src="images/yonghu.png" alt="">
+                                </div>
+                                <input type="tel" autocomplete="off" spellcheck="false" placeholder="请输入手机号">
+                            </div>
+                            <div class="ivu-form-item yzm" style="display: inline-block">
+                                <div class="icon">
+                                    <img src="images/手机.png" alt="">
+                                </div>
+                                <input type="text" autocomplete="off" spellcheck="false" placeholder="请输入验证码"
+                                    style="width: 130px;">
+                            </div>
+                            <button style="width: 80px;" class="btn" id="btn"><span>获取验证码</span></button>
+                        </div>
+                    </form>
+                    <div class="ivu-form-item">
+                        <button  id="loginID">
+                            <span>登录</span>
+                        </button>
+                    </div>
+                    <a href="../忘记密码/index.html" class="pointer1">忘记密码</a>
+                    <a href="../注册界面/index.html" class="pointer2">注册</a>
+                </div>
+            </div>
+        </div>
+        <!-- 尾部 -->
+        <footer class="foot">
+            <div class="foot-left">
+                <div class="yqlj">
+                    友情链接：
+                    <a href="#"> 天亮公开课资源&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a href="#">尚云科技&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a href="#">星云大数据平台&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a href="#">天亮舆情监控系统&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a href="#">IT毕业设计&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a href="#">网思安网络安全课堂&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </div>
+                <div class="bq">copyright@版权所有 天亮教育 网站标识码：23667788978 备案编号：冀ICP备2356645765765 </div>
+                <div class="bq"> 电子邮箱：623143506@qq.com 技术支持：河北尚云信息科技有限公司</div>
+            </div>
+            <div class="foot-right">
+                <img src="images/微信公众号.jpg" alt="">
+                <br>
+                <span>微信公众号</span>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="lib/jQuery/jquery-3.4.1.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>

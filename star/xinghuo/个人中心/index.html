@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="app">
+        <!-- 导航栏 -->
+        <nav class="nav">
+            <div class="nav-left">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="../新闻动态/index.html">新闻动态</a></li>
+                    <li><a href="../大赛报名/index.html">大赛报名</a></li>
+                    <li><a href="http://bbs.myhope365.com/" target="_blank">天亮社区</a></li>
+                    <li><a href="../关于我们/index.html">关于我们</a></li>
+                    <li><a href="../个人中心/index.html" class="active">个人中心</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 内容 -->
+        <div class="PersonalCenter">
+            <div class="layout">
+                <div class="ivu-layout">
+                    <div class="ivu-layout-content">
+                        <div class="ivu-layout-has-sider">
+                            <div class="ivu-layout-sider">
+                                <div class="ivu-layout-sider-children">
+                                    <ul class="ivu-menu">
+                                        <li class="ivu-menu-item active2">
+                                            <img src="images/心.png" alt=""> 基本信息
+                                        </li>
+                                        <li class="ivu-menu-item">
+                                            <img src="images/文档.png" alt=""> 参赛信息
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sure">
+                                <div class="ivu-layout-content"
+                                    style="padding: 24px 200px; min-height: 280px; background: rgb(255, 255, 255);">
+                                    <div>
+                                        <h1 style="font-size: 22px; margin-bottom: 30px;font-weight: initial;">基本信息</h1>
+                                        <div class="inputContent" style="text-indent:1em;">
+                                            用户名：<input type="text" disabled="disabled" id="loginName">
+                                        </div>
+                                        <div class="inputContent">
+                                            账号类型：<input type="text" placeholder="选手" disabled="disabled">
+                                        </div>
+                                        <div class="inputContent" style="text-indent:1em;">
+                                            手机号：<input type="text" disabled="disabled" id="phonenumber">
+                                        </div>
+                                        <div class="inputContent" style="text-indent:2em;">
+                                            姓名：<input type="text" id="userName">
+                                        </div>
+                                        <div class="inputContent">
+                                            身份证号：<input type="text" id="idNumber">
+                                        </div>
+                                        <div class="inputContent" style="text-indent:2em;">
+                                            邮箱：<input type="text" id="email">
+                                        </div>
+                                        <div class="inputContent" style="text-indent:2em;">
+                                            学校：<input type="text" id="school">
+                                        </div>
+                                        <div class="inputContent" style="text-indent:2em;">
+                                            专业：<input type="text" id="profession">
+                                        </div>
+                                        <div class="inputContent" style="text-indent:2em;">
+                                            年级：<input type="text" id="grade">
+                                        </div>
+                                        <div class="inputContent inputContent1">
+                                            <button class="btn1">更新信息</button>
+                                            <button class="btn2"><a href="../登录界面/index.html" style="color: #fff">退出登录</a></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="ivu-layout-content"
+                                    style="padding: 24px 200px; min-height: 280px; background: rgb(255, 255, 255); display: none;">
+                                    <p>暂无参赛信息</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 尾部 -->
+        <footer class="foot">
+            <div class="foot-left">
+                <div class="yqlj">
+                    友情链接：
+                    <a href="#" id="linkName0"></a>
+                    <a href="#" id="linkName1"></a>
+                    <a href="#" id="linkName2"></a>
+                    <a href="#" id="linkName3"></a>
+                    <a href="#" id="linkName4"></a>
+                    <a href="#" id="linkName5"></a>
+                </div>
+                <div class="bq"><span id="copyright"></span><span id="websiteId"></span><span id="internetContentProvider"></span></div>
+                <div class="bq"><span id="email"></span><span id="technicalSupport"></span></div>
+            </div>
+            <div class="foot-right">
+                <img src="images/微信公众号.jpg" id="qrCodeFile">
+                <br>
+                <span>微信公众号</span>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="lib/jQuery/jquery-3.4.1.min.js"></script>
+<script src="js/index.js"></script>
+
+</html>

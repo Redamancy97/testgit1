@@ -1,0 +1,305 @@
+/* 公共部分 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #515a6e;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #2d8cf0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.active {
+    color: #00cf8c !important;
+    border-bottom: 2px solid #00cf8c;
+}
+
+.active1 {
+    color: #0469b3 !important;
+    height: 35px !important;
+    border-bottom: 2px solid #0469b3;
+}
+
+#app {
+    min-width: 1300px;
+    overflow: auto;
+}
+
+/* 导航栏 */
+.nav {
+    width: 100%;
+    height: 60px;
+    min-width: 1300px;
+    z-index: 1001;
+    /* background-color: red; */
+}
+
+.nav-left {
+    height: 46px;
+    width: 359px;
+    line-height: 46px;
+    float: left;
+    margin-top: 8px;
+    margin-left: 50px;
+}
+
+.nav-left img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-right {
+    height: 60px;
+    /* width: 600px; */
+    float: right;
+    margin-right: 50px;
+}
+
+.nav-right ul li {
+    height: 100%;
+    /* width: 15%; */
+    width: 100px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 14px;
+    font-family: SourceHanSansSC-regular;
+    float: left;
+}
+
+.nav-right ul li a {
+    display: block;
+    height: 50px;
+    color: #515a6e;
+    width: 60px;
+}
+
+.nav-right ul li a:hover {
+    color: #00cf8c !important;
+    border-bottom: 2px solid #00cf8c;
+}
+
+.denglu {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    background: #00cf8c;
+    margin-top: 15px;
+    line-height: 30px;
+    color: #fff;
+}
+
+/* 内容 */
+.PersonalCenter {
+    width: 100%;
+    font-size: 16px;
+    background: rgb(236, 238, 241);
+
+}
+
+.layout {
+    position: relative;
+    min-height: 660px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(215, 221, 228);
+    border-image: initial;
+    background: rgb(245, 247, 249);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.ivu-layout {
+    padding: 50px 199px;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    background: #f5f7f9;
+}
+
+.ivu-layout-content {
+    padding: 24px 0px;
+    min-height: 280px;
+    background: rgb(255, 255, 255);
+    flex: auto;
+    float: left;
+}
+
+.ivu-layout-has-sider {
+    flex-direction: row;
+}
+
+.ivu-layout-sider {
+    width: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    flex: 0 0 200px;
+    background: rgb(255, 255, 255);
+    float: left;
+}
+
+.ivu-layout-sider-children {
+    height: 100%;
+    padding-top: .1px;
+    margin-top: -.1px;
+}
+
+.ivu-menu {
+    width: auto;
+    background: #fff;
+    display: block;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    list-style: none;
+    color: #515a6e;
+    font-size: 14px;
+    position: relative;
+    z-index: 900;
+}
+
+.ivu-menu-item {
+    display: block;
+    outline: 0;
+    list-style: none;
+    font-size: 14px;
+    padding: 14px 24px;
+    position: relative;
+    border-right: 1px solid #ccc;
+}
+
+.ivu-menu-item>img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.active2 {
+    color: #2d8cf0;
+    background: #f0faff;
+    z-index: 2;
+    border-right: 2px solid #2d8cf0;
+}
+
+.inputContent {
+    margin-bottom: 24px;
+    vertical-align: top;
+    position: relative;
+}
+
+.inputContent>input {
+    padding: 4px 7px;
+    margin-left: 10px;
+    width: 259px;
+    height: 32px;
+    border: none;
+    border: 1px solid #dcdee2;
+    border-radius: 4px;
+}
+
+.inputContent>button {
+    width: 80px;
+    height: 32px;
+    vertical-align: middle;
+    line-height: 1.5;
+    color: #fff;
+    border: none;
+    background-color: #2baee9;
+    border-color: #2d8cf0;
+    border-radius: 4px;
+}
+
+.inputContent1 {
+    width: 100%;
+    height: 32px;
+}
+
+.btn1 {
+    position: absolute;
+    bottom: 0;
+    left: 90px;
+}
+
+.btn2 {
+    position: absolute;
+    bottom: 0;
+    left: 210px;
+}
+
+/* 尾部 */
+.foot {
+    padding: 10px;
+    height: 140px;
+    width: 100%;
+    background-color: #00cf8c;
+    text-align: center;
+    margin: 0 auto;
+    /* height: 20px; */
+    color: #fff;
+    font-size: 12px;
+    font-family: SourceHanSansSC-regular;
+    position: relative;
+}
+
+.foot-left {
+    display: inline-block;
+    width: 100%;
+    float: left;
+}
+
+.yqlj {
+    width: 100%;
+    height: 60px;
+    line-height: 50px;
+    font-size: 14px;
+}
+
+.yqlj a {
+    color: #fff;
+}
+
+.bq {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    height: 20px;
+    color: #fff;
+    font-size: 12px;
+    font-family: SourceHanSansSC-regular;
+}
+
+.foot-right {
+    margin-top: -14px;
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    /* float: right; */
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+.foot-right img {
+    display: inline;
+    width: 83px;
+}
+
+.foot-right span {
+    font-size: 14px;
+}

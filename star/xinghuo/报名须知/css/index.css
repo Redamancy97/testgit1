@@ -1,0 +1,252 @@
+/* 公共部分 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #515a6e;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #2d8cf0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.active {
+    color: #00cf8c !important;
+    border-bottom: 2px solid #00cf8c;
+}
+
+#app {
+    min-width: 1300px;
+    overflow: auto;
+}
+
+input,
+select {
+    width: 200px;
+    height: 32px;
+    line-height: 1.5;
+    padding: 4px 7px;
+    font-size: 12px;
+    border: 1px solid #dcdee2;
+    border-radius: 4px;
+    color: #515a6e;
+    background-color: #fff;
+    background-image: none;
+    position: relative;
+}
+
+textarea {
+    vertical-align: top;
+    border: 1px solid #dcdee2;
+    border-radius: 4px;
+    padding: 6px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/* 导航栏 */
+.nav {
+    width: 100%;
+    height: 60px;
+    min-width: 1300px;
+    z-index: 1001;
+    /* background-color: red; */
+}
+
+.nav-left {
+    height: 46px;
+    width: 359px;
+    line-height: 46px;
+    float: left;
+    margin-top: 8px;
+    margin-left: 50px;
+}
+
+.nav-left img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-right {
+    height: 60px;
+    /* width: 600px; */
+    float: right;
+    margin-right: 50px;
+}
+
+.nav-right ul li {
+    height: 100%;
+    /* width: 15%; */
+    width: 100px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 14px;
+    font-family: SourceHanSansSC-regular;
+    float: left;
+}
+
+.nav-right ul li a {
+    display: block;
+    height: 50px;
+    color: #515a6e;
+    width: 60px;
+}
+
+.nav-right ul li a:hover {
+    color: #00cf8c !important;
+    border-bottom: 2px solid #00cf8c;
+}
+
+/* 内容 */
+.content {
+    width: 100%;
+}
+
+.enroll {
+    font-size: 16px;
+    color: #101010;
+    font-family: SourceHanSansSC-regular;
+    margin-bottom: 40px;
+}
+
+.topImgBackground {
+    width: 100%;
+    background: url(../images/创新创业大赛.jpg) center center no-repeat;
+    height: 400px;
+}
+
+.bmimg {
+    width: 90%;
+    margin: auto;
+    padding-left: 50px;
+    margin-top: 20px;
+}
+
+.bmcontent {
+    width: 1200px;
+    margin: auto;
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.bmcontent1 {
+    margin-left: -8px;
+    margin-right: -8px;
+    position: relative;
+    height: auto;
+    zoom: 1;
+    display: block;
+}
+
+.bmcontent2 {
+    padding-left: 8px;
+    padding-right: 8px;
+    display: block;
+    width: 100%;
+}
+
+.bmcontent3 {
+    margin-left: 50px;
+    font-size: 14px;
+}
+
+.back {
+    font-size: 14px;
+}
+
+.bmcontent3 h1 {
+    text-align: center;
+    color: #2a2147;
+    font-size: 18px;
+    font-family: SourceHanSansSC-regular;
+    font-weight: initial;
+}
+
+
+
+.introduce1 {
+    margin: 10px 0;
+    line-height: 22px;
+    font-family: SourceHanSansSC-regular;
+}
+
+
+
+/* 尾部 */
+.foot {
+    padding: 10px;
+    height: 140px;
+    width: 100%;
+    background-color: #00cf8c;
+    text-align: center;
+    margin: 0 auto;
+    /* height: 20px; */
+    color: #fff;
+    font-size: 12px;
+    font-family: SourceHanSansSC-regular;
+    position: relative;
+}
+
+.foot-left {
+    display: inline-block;
+    width: 100%;
+    float: left;
+}
+
+.yqlj {
+    width: 100%;
+    height: 60px;
+    line-height: 50px;
+    font-size: 14px;
+}
+
+.yqlj a {
+    color: #fff;
+}
+
+.bq {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    height: 20px;
+    color: #fff;
+    font-size: 12px;
+    font-family: SourceHanSansSC-regular;
+}
+
+.foot-right {
+    margin-top: -14px;
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    /* float: right; */
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+.foot-right img {
+    display: inline;
+    width: 83px;
+}
+
+.foot-right span {
+    font-size: 14px;
+}
